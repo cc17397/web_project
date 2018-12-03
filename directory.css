@@ -1,0 +1,109 @@
+/* General Body*/
+body {
+  background-color: rgb(128, 0, 0);
+}
+body {
+  color: white;
+}
+
+
+/*Navigation Bar*/
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* Carousel */
+* {
+  margin: 0;
+  padding: 0;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+img.carousel-inner {
+  width: 100%
+}
+.carousel-overlay {
+	position: absolute;
+	top: 12%;
+	right: 0;
+	left: 12%;
+  font-size: 50%;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+    }
+
+
+/*Content of Page */
+.thumbnail {
+  background-color: rgb(128, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+p {
+  color: rgb(255, 255, 255);
+}
+h3 {
+  color: rgb(255, 255, 255);
+}
+.welcome {
+  text-align: left;
+  font-size: 20px;
+}
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    transition: border .2s ease-in-out;
+    border: solid;
+    font-size: 18px;
+  }
+
+
+/* Social Buttons */
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  position: fixed;
+  left: 45%;
+  bottom: 5%;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  position: fixed;
+  left: 50%;
+  bottom: 5%;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+  position: fixed;
+  left: 55%;
+  bottom: 5%;
+}
