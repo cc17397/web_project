@@ -1,65 +1,177 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Bristol Street Art</title>
-        <link rel='stylesheet' type='text/css' href='homepage.css'>
-        <style>
-            ul.nav li{
-                display: inline-block;
-                padding-right: 10px;
-            }
-        </style>
-    </head>
-    <body>
+ <head>
+  <title>Art of Bristol</title>
+  <link rel='shortcut icon' href='/images/favicon_art_logo.ico' type='image/x-icon'>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <link rel='stylesheet' type='text/css' href='homepage.css'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+   .carousel-inner > .item > img,
+   .carousel-inner > .item > a > img {
+     width: 100%;
+     margin: auto;
+   }
+  </style>
+</head>
 
-    <!-- Banner pictures -->
-     <div class='banner'>
-      <img  src='images/banner/girl_with_balloons_banksy.jpg'>
-      <img  src='images/banner/paint_pot_angel_banksy.jpg'>
-      <img  src='images/banner/queen_jubilee_banksy.jpg'>
-      <img  src='images/banner/spartacus_jps.jpg'>
-      <img  src='images/banner/the_big_deal_jps.jpg'>
-      <img  src='images/banner/well_hung_banksy.jpg'>
-     </div>
-
-
-     <!-- Search Bar -->
-      <div class='search'>
-       <form action="/action_page.php">
-        <input type="text" placeholder="Search..." name="search">
-        <button type="submit">
-      </form>
-    </div>
+ <body>
 
     <!-- Navigation Bar -->
-     <ul class='nav'>
-      <li><a href="#homepage">Home</a></li>
-      <li><a href="#aboutpage">About</a></li>
-      <li><a href="#picoftheweekpage">Pic of the Week</a></li>
-      <li><a href="#directorypage">Directory</a></li>
-      <li><a href="#mapspage">Maps</a></li>
-      <li><a href="#newspage">News</a></li>
-      <li><a href="#historypage">History</a></li>
-    </ul>
+    <nav class='navbar navbar-inverse navbar-fixed-top'>
+      <div class='container'>
+      <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-9'>
+        <ul class="nav navbar-nav">
+          <li class='active'><a href='#'>Home</a></li>
+          <li class='active'><a href='#'>About</a></li>
+          <li class='active'><a href='#'>Pic of the Week</a></li>
+          <li class='active'><a href='#'><a href='directory.html'>Directory</a></a></li>
+          <li class='active'><a href='#'>Maps</a></li>
+          <li class='active'><a href='#'>News</a></li>
+          <li class='active'><a href='#'>History</a></li>
+        </ul>
+        <form class='navbar-form navbar-right' role='search'>
+         <div class='form-group'>
+          <input type='text' class='form-control' placeholder='Search'>
+         </div>
+         <button type='submit' class='btn btn-default'>Search</button>
+        </form>
+      </div>
+     </div>
+    </nav>
 
-    <!-- Content of Page -->
-    <p class='homepage-welcome'>
-      Welcome! This page is dedictaed to Banksy and all of the fabulous street art around Bristol. If you enjoy finding all of the art around
-      where you live, or you're visiting Bristol and you want to see as much art as possible during your time here then this is the site for you!
+
+   <!-- Carousel -->
+   <div class="container-fluid">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner" role="listbox">
+      <div class="item active">
+       <img src='images/banner/paint_pot_angel_banksy.jpg'>
+      </div>
+      <div class="item">
+       <img src='images/banner/the_big_deal_jps.jpg'>
+      </div>
+      <div class="item">
+       <img src='images/banner/queen_jubilee_banksy.jpg'>
+      </div>
+      <div class="item">
+       <img src='images/banner/spartacus_jps.jpg'>
+      </div>
+      <div class="item">
+       <img src='images/banner/girl_with_balloons_banksy.jpg'>
+      </div>
+      <div class="item">
+       <img src='images/banner/well_hung_banksy.jpg'>
+      </div>
+     </div>
+    </div>
+    <div class="carousel-overlay">
+     <h1>The Art of Bristol</h1>
+    </div>
+   </div>
+
+
+   <!-- Content of Page (top) -->
+   <div class = 'row'>
+    <div class = 'col-xs-12 col-md-6'>
+     <div class = 'thumbnail'>
+    <div class = 'caption' 'welcome'>
+     <h3>Welcome!</h3>
+      <p>This page is dedicated to Banksy and all of the fabulous street art around Bristol since as Bristol residents, we see art all of the time!
+      But we want to have the ability to find a particular piece or find out more about the art we come across. If you enjoy finding all of the art
+      around where you live, or you're visiting Bristol and you want to see as much art as possible during your time here then this is the site
+      for you!
+      <br>
       <br>
       Here you will find all sorts of useful information for your explorations! On the Maps page, you can check your area and see what art is close
       and there is even a number of trails maps for you to follow, perfect if you are time constrained but what to see everything! On the Directory
       page, you can find out all sort of information about your favorite pieces or find a new piece that looks interesting to go and find.
       <br>
+      <br>
       Keep an eye on our News page to stay up-to-date with all the latest news regarding art in Bristol, including when new art is spotted!
       <br>
+      <br>
       Go have an explore!. Both this site and Bristol have plenty of fun tibits for you to find!
-    </p>
+      <br>
+      <br>
+      If you have any knowledge of art we haven't featured or suggestions for us, please use the contact form on the Directory page!</p>
+    </div>
+   </div>
+ </div>
 
-    <p class='pic-of-week'>
-      This week's Pic of the Week is the very well known 'Well Hung Lover'! You will find this piece by Banksy by looking over the bridge at the bottom
-      of Park Street towards Basement 45. This art piece if one of Banksy's most famous pieces due to the story behind... <em>Find out more here</em>
-     </p>
-        
-    </body>
+   <div class = 'col-xs-12 col-md-6'>
+    <div class = 'thumbnail' 'img-responsive'>
+     <img src = 'images/well_hung_banksy.jpg' style='width:100%'>
+    </div>
+    <div class = 'caption'>
+     <h3>Pic of the Week</h3>
+     <p>This week's Pic of the Week is the very well known 'Well Hung Lover'! You will find this piece by Banksy by looking over the bridge at the bottom
+        of Park Street towards Basement 45. This art piece is one of Banksy's most famous pieces due to the story behind...</p>
+     <p><a href = '#' class = 'btn btn-default' role = 'button'><em>Find out more...</em></a></p>
+    </div>
+   </div>
+  </div>
+  <br>
+
+
+  <!-- Content of Page (bottom) -->
+  <div class = 'row'>
+   <div class = 'col-xs-12 col-md-4 col-lr-4'>
+    <div class = 'thumbnail'>
+     <img src = 'images/news_image_1.jpg' style='width:100%'>
+    </div>
+    <div class = 'caption'>
+     <h3>Artist to whitewash £568k Banksy because 'street art shouldn't be bought and sold'</h3>
+     <p>Slave Labour was originally painted on the side of a Poundland shop in north London but was sold yesterday (November 14) at an
+        auction in Los Angeles. Painted in 2012, it is believed to be a protest against sweatshops used to manufacture souvenirs for the
+        London Olympics...</p>
+     <p><a href = '#' class = 'btn btn-default' role = 'button'><em>Find out more...</em></a></p>
+    </div>
+   </div>
+
+   <div class = 'col-xs-12 col-md-4 col-lr-4'>
+    <div class = 'thumbnail'>
+     <img src = 'images/news_image_2.jpg' style='width:100%'>
+    </div>
+    <div class = 'caption'>
+     <h3>Banksy auction stunt leaves art world in shreds</h3>
+     <p>Banksy has played what could be one of the most audacious stunts in art history, arranging for one of his best-known works
+        to self-destruct after being sold at auction for just over £1m. Girl With Balloon was the final item in an auction at Sotheby’s
+        in London on Friday night and its sale price equalled the artist’s previous auction record of £1.04m. Shortly after the hammer
+        came down...</p>
+     <p><a href = '#' class = 'btn btn-default' role = 'button'><em>Find out more...</em></a></p>
+    </div>
+   </div>
+
+   <div class = 'col-xs-12 col-md-4 col-lr-4'>
+    <div class = 'thumbnail'>
+     <img src = 'images/news_image_3.jpg' style='width:100%'>
+    </div>
+    <div class = 'caption'>
+     <h3>Upfest 2018: Thousands visit Bristol street art festival</h3>
+     <p>Upfest started with just nine artists displaying their work but this year more than 300 are taking part from 70 countries
+        around the world. Some 60,000 sq ft of surfaces, including buildings, shop fronts and shutters, are being given over to the
+        artists who can be watched by the public while they work. The event is being held in the Bedminster and...</p>
+     <p><a href = '#' class = 'btn btn-default' role = 'button'><em>Find out more...</em></a></p>
+    </div>
+   </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Social Buttons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <a href='#' class='fa fa-facebook'></a>
+  <a href='#' class='fa fa-twitter'</a>
+  <a href='#' class='fa fa-pinterest'></a>
+
+
+ </body>
 </html>
